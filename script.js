@@ -36,7 +36,9 @@ var price={
 
 //to render chocolate
 function renderChocolate(){
-    if(noOfLayers<5){
+    if(noOfLayers===5)
+      alert("SORRY! YOU CANNOT ADD MORE THAN 5 LAYERS")
+    if(noOfLayers<5 && isBuyActive){
       noOfLayers++
       let newElement=document.createElement("div")
       newElement.classList.add("layer1")
@@ -51,7 +53,9 @@ function renderChocolate(){
 }
 //to render strawberry
 function renderStrawBerry(){
-    if(noOfLayers<5){
+    if(noOfLayers===5)
+     alert("SORRY! YOU CANNOT ADD MORE THAN 5 LAYERS")
+    if(noOfLayers<5 && isBuyActive){
       noOfLayers++
       let newElement=document.createElement("div")
       newElement.classList.add("layer2")
@@ -67,7 +71,9 @@ function renderStrawBerry(){
 
 //to render butterscotch
 function renderButterScotch(){
-    if(noOfLayers<5){
+    if(noOfLayers===5 )
+       alert("SORRY! YOU CANNOT ADD MORE THAN 5 LAYERS")
+    if(noOfLayers<5 && isBuyActive){
       noOfLayers++
       let newElement=document.createElement("div")
       newElement.classList.add("layer3")
@@ -83,7 +89,9 @@ function renderButterScotch(){
 }
 //to render vanilla
 function renderVanilla(){
-    if(noOfLayers<5){
+    if(noOfLayers===5 )
+      alert("SORRY! YOU CANNOT ADD MORE THAN 5 LAYERS")
+    if(noOfLayers<5 && isBuyActive){
       noOfLayers++
       let newElement=document.createElement("div")
       newElement.classList.add("layer4")
@@ -99,7 +107,9 @@ function renderVanilla(){
 }
 //to render redvelvet
 function renderRedVelvet(){
-    if(noOfLayers<5){
+    if(noOfLayers===5 )
+      alert("SORRY! YOU CANNOT ADD MORE THAN 5 LAYERS")
+    if(noOfLayers<5 && isBuyActive){
       noOfLayers++
       let newElement=document.createElement("div")
       newElement.classList.add("layer5")
@@ -115,7 +125,7 @@ function renderRedVelvet(){
 }
 //on clicking buy button
 function clickBuy(){
-    if((noOfLayers===5) && isBuyActive){
+    if(isBuyActive){
         console.log("hi")
         console.log("hi")
         let newElement=document.createElement("div");
